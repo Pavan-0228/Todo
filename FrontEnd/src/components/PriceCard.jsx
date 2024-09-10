@@ -23,9 +23,6 @@ function PriceCard({ onClose }) {
             );
 
             toast.success(response.data.message);
-            setTimeout(() => {
-                window.location.reload()
-            }, 2000);
         } catch (error) {
 
             toast.error(error.response?.data.message || "Subscription failed!");
