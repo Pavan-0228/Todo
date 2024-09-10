@@ -13,7 +13,7 @@ function Home() {
 
     useEffect(() => {
         dispatch(fetchTodos());
-    }, [dispatch, todos]);
+    }, [dispatch, todos,setShowPriceCard]);
 
     // Toggle the PriceCard visibility
     const handleBuyClick = () => {
