@@ -12,7 +12,7 @@ function PriceCard({ onClose }) {
             ))
 
             const response = await axios.post(
-                "http://localhost:3000/api/v1/auth/subscribe",{},
+                "https://todo-5m23.onrender.com/api/v1/auth/subscribe",{},
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -42,7 +42,7 @@ function PriceCard({ onClose }) {
         };
 
         return axios
-            .post("http://localhost:3000/api/v1/payment", body, {
+            .post("https://todo-5m23.onrender.com/api/v1/payment", body, {
                 headers,
             })
             .then((response) => {
