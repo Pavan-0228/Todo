@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:3000/api/v1/todo",
+    baseURL: "https://todo-5m23.onrender.com/api/v1/todo",
 });
 
 axiosInstance.interceptors.request.use(
