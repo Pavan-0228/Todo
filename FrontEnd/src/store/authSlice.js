@@ -14,7 +14,7 @@ export const register = createAsyncThunk(
     async (userData, { rejectWithValue }) => {
         try {
             const response = await axios.post(
-                "http://localhost:3000/api/v1/auth/register",
+                "https://todo-5m23.onrender.com/api/v1/auth/register",
                 userData
             );
             const { user, accessToken } = response.data;
@@ -38,7 +38,7 @@ export const login = createAsyncThunk(
     async (loginData, { rejectWithValue }) => {
         try {
             const response = await axios.post(
-                "http://localhost:3000/api/v1/auth/login",
+                "https://todo-5m23.onrender.com/api/v1/auth/login",
                 loginData
             );
 
