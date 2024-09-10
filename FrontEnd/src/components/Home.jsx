@@ -11,9 +11,9 @@ function Home() {
 
     const [showPriceCard, setShowPriceCard] = useState(false);
 
-    useEffect(() => {
+        useEffect(() => {
         dispatch(fetchTodos());
-    }, [dispatch, todos,setShowPriceCard]);
+    }, [dispatch, todos,setShowPriceCard,showPriceCard]);
 
     // Toggle the PriceCard visibility
     const handleBuyClick = () => {
